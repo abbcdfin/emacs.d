@@ -8,7 +8,17 @@
 
 ;; Produce backtraces when errors occur: can be helpful to diagnose startup issues
 ;;(setq debug-on-error t)
+(setq select-enable-clipboard t)
+(setq select-enable-primary nil)
 
+;;----------------------------------------------------------------------------
+;; user modified settings
+;;----------------------------------------------------------------------------
+(setq make-backup-files nil)
+(setq auto-save-default nil)
+
+
+;;
 (let ((minver "27.1"))
   (when (version< emacs-version minver)
     (error "Your Emacs is too old -- this config requires v%s or higher" minver)))
@@ -110,7 +120,7 @@
 (require 'init-haskell)
 (require 'init-elm)
 (require 'init-purescript)
-(require 'init-ruby)
+;;(require 'init-ruby)
 (require 'init-rails)
 (require 'init-sql)
 (require 'init-ocaml)
