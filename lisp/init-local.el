@@ -18,11 +18,10 @@
   (mapcar 'kill-buffer (buffer-list))
   (delete-other-windows))
 
-(setq org-directory "~/org/org-normal")
-(setq org-default-notes-file "~/org/org-normal/refile/refile.org")
-;;(setq org-agenda-files '("~/org/org-normal/study"))
-;;(setq org-agenda-file-regexp "*.org")
 (setq org-agenda-files (directory-files-recursively "~/org/org-normal" "\\.org$"))
+(setq org-default-notes-file "~/org/org-normal/refile/refile.org")
+;;(setq org-directory "~/org/org-normal")
+;;(setq org-agenda-file-regexp "*.org")
 
 (setq org-enable-priority-commands t)
 (setq org-default-priority ?E)
@@ -77,7 +76,7 @@
 
 (require 'org-roam-bibtex)
 
-(setq org-archive-location "~/org/archives/2023.org::* From %s")
+(setq org-archive-location "~/org/archives/2024.org::* From %s")
 
 ;; yasnippet setup
 (require 'yasnippet)
@@ -92,3 +91,8 @@
   "complile latex of the current buffer"
   (setq web-mode-markup-indent-offset 4))
 (setq TeX-parse-self t)
+
+;; chinese input
+(require 'pyim)
+(require 'pyim-basedict)
+(pyim-basedict-enable)
