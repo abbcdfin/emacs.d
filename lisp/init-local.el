@@ -1,7 +1,7 @@
 (load-theme 'wheatgrass)
 
 
-(set-face-attribute 'default nil :height 121)
+(set-face-attribute 'default nil :height 110)
 (setq org-format-latex-options '(:foreground default :background default :scale 1.5 :html-foreground "Black" :html-background "Transparent" :html-scale 1.0 :matchers
                                              ("begin" "$1" "$" "$$" "\\(" "\\[")))
 
@@ -93,6 +93,6 @@
 (setq TeX-parse-self t)
 
 ;; chinese input
-(require 'pyim)
-(require 'pyim-basedict)
-(pyim-basedict-enable)
+;;(require 'pyim)
+;;(require 'pyim-basedict)
+;;(pyim-basedict-enable)

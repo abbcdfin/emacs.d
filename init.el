@@ -14,8 +14,14 @@
 ;;----------------------------------------------------------------------------
 ;; user modified settings
 ;;----------------------------------------------------------------------------
-(setq make-backup-files nil)
+(setq make-backup-files t)
 (setq auto-save-default nil)
+
+;; Set backup directory
+(setq backup-directory-alist `(("." . "/tmp/.emacs.d/backups")))
+
+;; Ensure the backup directory exists
+(make-directory "/tmp/.emacs.d/backups" t)
 
 
 ;;
