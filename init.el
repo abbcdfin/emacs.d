@@ -64,3 +64,22 @@
       (let ((feature (intern (file-name-base file))))
         ;; Load with error suppression if needed
         (require feature nil t)))))
+
+;; ====================================================================
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages nil)
+ '(package-vc-selected-packages
+   '((aidermacs :url "https://github.com/MatthewZMD/aidermacs"))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+(elpaca gnu-elpa-keyring-update)
